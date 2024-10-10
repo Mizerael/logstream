@@ -12,6 +12,7 @@ requires-python = ">= 3.8"
 [project.scripts]
 "task1_1" = "src.task1.first:task1"
 "task1_2" = "src.task1.second:task2"
+"task1_3" = "src.task1.thrid:task3"
 
 [build-system]
 requires = ["hatchling"]
