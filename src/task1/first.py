@@ -7,7 +7,7 @@ def task1():
         match inp.lower():
             case "exit":
                 print("Конец...")
-                sys.exit(1)
+                sys.exit(0)
             case _:
                 val = inp.lstrip('-')
                 sign = len(val) < len(inp)
