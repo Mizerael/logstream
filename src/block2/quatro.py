@@ -22,7 +22,7 @@ def task4() -> None:
             dictionary.get("Город проживания")[i] = "Махачкала"
         if (name == "Александр" and surname == "Иванов" and
                 dictionary.get("Статус")[i] == "Студент"):
-            dictionary.get("Статус")[i] == "Работает"
+            dictionary.get("Статус")[i] = "Работает"
         if name == "Аркадий" and surname == "Лихачев":
             for val in dictionary.values():
                 val.pop(i)
