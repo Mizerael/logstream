@@ -20,9 +20,14 @@ def function_name(search: str, status: bool,
         raise ValueError("Error for search")
 
 
-print(function_name("args", True, *[1, "sst", 2]))
-print(function_name("args", True, *(1, "sst", 2)))
-print(function_name("args", True, *{1, "sst", 2}))
-print(function_name("args", True, *{'a': 1, 'b': "sst", 'c': 2}))
-print(function_name("args", False, *{'a': 1, 'b': "sst", 'c': 2}))
-print(function_name("kwargs", False, **{'a': 1, 'b': "sst", 'c': 2}))
+def task3() -> None:
+    print(function_name("args", True, *[1, "sst", 2]))
+    print(function_name("args", True, *(1, "sst", 2)))
+    print(function_name("args", True, *{1, "sst", 2}))
+    print(function_name("args", True, *{'a': 1, 'b': "sst", 'c': 2}))
+    print(function_name("args", False, *{'a': 1, 'b': "sst", 'c': 2}))
+    print(function_name("kwargs", False, **{'a': 1, 'b': "sst", 'c': 2}))
+
+
+if __name__ == "__main__":
+    task3()
