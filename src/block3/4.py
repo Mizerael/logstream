@@ -35,8 +35,7 @@ class Wallet:
             return 0
         return 1
 
-    def change_payment(self,
-                       new_pay_service: Payment_service) -> (int, str):
+    def change_payment(self, new_pay_service: Payment_service) -> (int, str):
         if self._payment_service is None:
             self._payment_service = new_pay_service
             return (1, "Система оплаты изменена успешно")
@@ -148,11 +147,17 @@ async def task4() -> None:
     status = await new_crypto_wallet.top_up(2)
     print(status, new_crypto_wallet.get_balance())
     status = await new_crypto_wallet.pay(2.3)
-    print(status, new_crypto_wallet.get_balance(),
-          new_crypto_wallet.get_usd_balance())
+    print(
+        status,
+        new_crypto_wallet.get_balance(),
+        new_crypto_wallet.get_usd_balance(),
+    )
     status = await new_crypto_wallet.pay(1.9)
-    print(status, new_crypto_wallet.get_balance(),
-          new_crypto_wallet.get_usd_balance())
+    print(
+        status,
+        new_crypto_wallet.get_balance(),
+        new_crypto_wallet.get_usd_balance(),
+    )
     del new_crypto_wallet
 
 

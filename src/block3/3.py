@@ -1,5 +1,6 @@
-def function_name(search: str, status: bool,
-                  *args: list | tuple | set, **kwargs: dict) -> list | str:
+def function_name(
+    search: str, status: bool, *args: list | tuple | set, **kwargs: dict
+) -> list | str:
     result = []
     result_2 = ""
     if search == "args":
@@ -14,7 +15,7 @@ def function_name(search: str, status: bool,
             return result_2
     elif search == "kwargs":
         for k, v in kwargs.items():
-            result_2 += (" Key: {}, Value: {}; ".format(k, v))
+            result_2 += " Key: {}, Value: {}; ".format(k, v)
         return result_2
     else:
         raise ValueError("Error for search")
@@ -24,9 +25,9 @@ def task3() -> None:
     print(function_name("args", True, *[1, "sst", 2]))
     print(function_name("args", True, *(1, "sst", 2)))
     print(function_name("args", True, *{1, "sst", 2}))
-    print(function_name("args", True, *{'a': 1, 'b': "sst", 'c': 2}))
-    print(function_name("args", False, *{'a': 1, 'b': "sst", 'c': 2}))
-    print(function_name("kwargs", False, **{'a': 1, 'b': "sst", 'c': 2}))
+    print(function_name("args", True, *{"a": 1, "b": "sst", "c": 2}))
+    print(function_name("args", False, *{"a": 1, "b": "sst", "c": 2}))
+    print(function_name("kwargs", False, **{"a": 1, "b": "sst", "c": 2}))
 
 
 if __name__ == "__main__":

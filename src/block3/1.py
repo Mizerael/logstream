@@ -34,7 +34,7 @@ def div(x: nums, y: nums) -> nums:
 def pow(x: nums, y: nums) -> nums:
     if vals_not_of_type(x, y, nums):
         raise ValueError("Wrong datatype")
-    return x ** y
+    return x**y
 
 
 def check_nums(val: str) -> float:
@@ -57,15 +57,15 @@ def task1() -> None:
             x = check_nums(vals[0])
             y = check_nums(vals[2])
             match vals[1]:
-                case '+':
+                case "+":
                     print(add(x, y))
-                case '-':
+                case "-":
                     print(sub(x, y))
-                case '*':
+                case "*":
                     print(mul(x, y))
-                case '/':
+                case "/":
                     print(div(x, y))
-                case '^':
+                case "^":
                     print(pow(x, y))
 
 

@@ -1,15 +1,17 @@
 from typing import Callable
+
 mulable = int | float | str | list | tuple
 
 
 def mul_list(lst: list[mulable], num: int = 2) -> list[mulable]:
-
     return [x * num for x in lst]
 
 
-def pep8_heh(lst: list[mulable],
-             f: Callable[[list[mulable], int], list[mulable]],
-             num: int = 2) -> None:
+def pep8_heh(
+    lst: list[mulable],
+    f: Callable[[list[mulable], int], list[mulable]],
+    num: int = 2,
+) -> None:
     print(f(lst, num))
 
 

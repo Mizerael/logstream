@@ -1,5 +1,5 @@
 def task2() -> None:
-    inp = input().lower().replace(' ', '')
+    inp = input().lower().replace(" ", "")
     chars = {}
 
     for val in set(inp):

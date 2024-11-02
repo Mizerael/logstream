@@ -9,5 +9,4 @@ def task2():
         else:
             positive += num
         print(num)
-    print(
-        f"Сумма отрицательных: {negative}\n Сумма положительных: {positive}")
+    print(f"Сумма отрицательных: {negative}\n Сумма положительных: {positive}")

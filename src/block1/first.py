@@ -9,7 +9,7 @@ def task1():
                 print("Конец...")
                 sys.exit(0)
             case _:
-                val = inp.lstrip('-')
+                val = inp.lstrip("-")
                 sign = len(val) < len(inp)
                 if val.isdigit():
                     print(f"Длина :{len(val) + sign}")

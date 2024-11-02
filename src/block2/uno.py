@@ -18,7 +18,6 @@ def get_num(inf: str, check: Callable[[str], bool]) -> int:
 
 
 def task1() -> None:
-
     cnt = get_num("Введите количество элементов: ", lambda x: x.isdigit())
     res = []
     deg = []
@@ -31,9 +30,10 @@ def task1() -> None:
         except ValueError:
             res.append(i_res)
 
-        i_deg = get_num(f"степень {i+1}-го элемента: ",
-                        lambda x:
-                        x.startswith('-') and x[1:].isdigit() or x.isdigit())
+        i_deg = get_num(
+            f"степень {i+1}-го элемента: ",
+            lambda x: x.startswith("-") and x[1:].isdigit() or x.isdigit(),
+        )
         deg.append(i_deg)
 
     for i in range(cnt):
