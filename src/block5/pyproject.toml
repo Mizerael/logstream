@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "var1"
+version = "0.1.0"
+description = "solution of var1 block5 python course"
+authors = ["Mizerael <dan-acer@outlook.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+black = "^24.10.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
