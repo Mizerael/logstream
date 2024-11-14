@@ -36,7 +36,7 @@ allow-direct-references = true
 packages = ["src"]
 
 [tool.ruff]
-line-length = 80
+line-length = 79
 
 [tool.poetry]
 name = "logstream-course"
