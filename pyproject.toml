@@ -9,7 +9,7 @@ dependencies = [
     "pytest>=8.3.3",
 ]
 readme = "README.md"
-requires-python = ">= 3.8"
+requires-python = ">= 3.10"
 
 [project.scripts]
 "task1_1" = "src.block1.first:task1"
@@ -25,7 +25,7 @@ build-backend = "hatchling.build"
 [tool.rye]
 managed = true
 dev-dependencies = [
-    "ruff>=0.7.1",
+    "ruff>=0.7.3",
     "pre-commit>=4.0.1",
 ]
 
@@ -37,3 +37,19 @@ packages = ["src"]
 
 [tool.ruff]
 line-length = 80
+
+[tool.poetry]
+name = "logstream-course"
+version = "0.1.0"
+description = "A your description here"
+authors = ["Mizerael <dan-acer@outlook.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pytest = "^8.3.3"
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^4.0.1"
+ruff = "^0.7.3"
+
